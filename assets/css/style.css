@@ -268,3 +268,117 @@ html {
   background-color: #ccc;
   color: #000;
 }
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 100px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal .modal-container {
+  background: white;
+  color: black;
+  width: 900px;
+  margin: auto;
+}
+
+/* Header */
+
+.modal-container .modal-header {
+  text-align: center;
+  padding: 32px 16px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: block;
+  position: relative;
+}
+
+.modal-header h2 {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  letter-spacing: 4px;
+  font-weight: 400;
+  margin: 10px 0;
+  font-size: 30px;
+}
+
+.modal-header h2 i {
+  margin-right: 16px;
+}
+
+/* Exit */
+
+.modal-header .modal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px 16px;
+  display: inline-block;
+  line-height: 32px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.modal-close:hover {
+  color: #000;
+  background-color: #ccc;
+}
+
+/* Modal Body */
+.modal-container .modal-body {
+  padding: 0 16px;
+}
+
+.modal-body label {
+  display: block;
+  margin: 15px 0;
+}
+
+.modal-body .modal-input {
+  border: 1px solid #ccc;
+  padding: 8px;
+  width: 100%;
+  display: block;
+  line-height: 22px;
+}
+
+/* Modal Button */
+
+.modal-body .buy-ticket {
+  line-height: 22px;
+  border: none;
+  display: block;
+  width: 100%;
+  padding: 16px;
+  margin: 16px 0;
+  cursor: pointer;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-body .buy-ticket:hover {
+  color: #000;
+  background-color: #ccc;
+}
+
+.modal-body .close-ticket {
+  display: inline-block;
+  color: #fff;
+  background-color: #f44336;
+  margin: 16px 0;
+  padding: 8px 16px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  line-height: 22px;
+}
+
+.modal-body .modal-help {
+  display: inline-block;
+  float: right;
+  margin: 16px 0;
+}
