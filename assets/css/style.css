@@ -389,6 +389,7 @@ html {
   cursor: pointer;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.8);
+  -webkit-appearance: none;
 }
 
 .buy-ticket:hover {
@@ -481,6 +482,7 @@ html {
   float: right;
   background-color: black;
   width: auto;
+  -webkit-appearance: none;
 }
 
 .send-btn.buy-ticket:hover {

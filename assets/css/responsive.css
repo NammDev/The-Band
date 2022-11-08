@@ -73,5 +73,6 @@
   .send-btn.buy-ticket {
     width: 100%;
     line-height: 22px;
+    -webkit-appearance: none;
   }
 }
