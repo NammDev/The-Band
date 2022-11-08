@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Band</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/icon/icon-music-heart.png"
+    />
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
     <script
       src="https://kit.fontawesome.com/3ee13fda8b.js"
@@ -15,18 +20,18 @@
     <div id="main">
       <div id="header">
         <ul id="nav">
-          <li><a href="">Home</a></li>
-          <li><a href="">Band</a></li>
-          <li><a href="">Tour</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="#slider">Home</a></li>
+          <li><a href="#band">Band</a></li>
+          <li><a href="#tour">Tour</a></li>
+          <li><a href="#contact">Contact</a></li>
           <li>
             <a href="#"
               >More<i class="nav-arrow-down fa-solid fa-caret-down"></i
             ></a>
             <ul class="sub-nav">
-              <li><a href="">Merchandise</a></li>
-              <li><a href="">Extras</a></li>
-              <li><a href="">Media</a></li>
+              <li><a href="#slider">Merchandise</a></li>
+              <li><a href="#map">Map</a></li>
+              <li><a href="#footer">Footer</a></li>
             </ul>
           </li>
         </ul>
@@ -43,7 +48,7 @@
         </div>
       </div>
       <div id="content">
-        <div class="about-section">
+        <div id="band" class="about-section">
           <h2 class="section-heading">The Band</h2>
           <p class="section-sub-heading">We love music</p>
           <p class="section-justify">
@@ -85,7 +90,7 @@
           </div>
         </div>
 
-        <div class="tour-section">
+        <div id="tour" class="tour-section">
           <div class="tour-section-content">
             <h2 class="section-heading text-light">TOUR DATES</h2>
             <p class="section-sub-heading text-light">
@@ -154,7 +159,7 @@
           </div>
         </div>
 
-        <div class="contact-section">
+        <div id="contact" class="contact-section">
           <h2 class="section-heading">Contact</h2>
           <p class="section-sub-heading">Fan? Drop a note!</p>
           <div class="row">
@@ -167,22 +172,36 @@
               <form action="">
                 <div class="name-email">
                   <div class="half">
-                    <input type="text" placeholder="Name" />
+                    <input type="text" required placeholder="Name" />
                   </div>
                   <div class="half">
-                    <input type="text" placeholder="Email" />
+                    <input type="text" required placeholder="Email" />
                   </div>
                   <div class="clear"></div>
                 </div>
-                <input type="text" placeholder="Message" />
-                <input type="submit" value="SEND" class="buy-ticket send-btn"></input>
+                <input type="text" required placeholder="Message" />
+                <input type="submit" value="SEND" class="buy-ticket send-btn" />
               </form>
             </div>
             <div class="clear"></div>
           </div>
         </div>
+
+        <div id="map" class="map-section">
+          <img src="https://www.w3schools.com/w3images/map.jpg" alt="" />
+        </div>
       </div>
-      <div id="footer"></div>
+      <div id="footer">
+        <div class="social-lists">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-github"></i></a>
+          <a href=""><i class="fa-brands fa-pinterest"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <p class="copyright">Powered by <a href="#">w3.css</a></p>
+      </div>
     </div>
 
     <div class="modal">
