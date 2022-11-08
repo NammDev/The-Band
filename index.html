@@ -283,11 +283,16 @@
 
       // Tự động đóng khi chọn menu
       // Lấy ra những item trong menu
-      var menuItems = document.querySelectorAll('#nav li a[href*="#"]')
+      var menuItems = document.querySelectorAll('#nav > li a[href*="#"]')
+      var moreItem = document.querySelector('#nav > li:last-child a')
       for (menuItem of menuItems) {
-        menuItem.addEventListener('click', () => {
-          header.style.height = null
-        })
+        menuItem.onclick = function (event) {
+          if (moreItem === this) {
+            event.preventDefault()
+          } else {
+            header.style.height = null
+          }
+        }
       }
     </script>
   </body>

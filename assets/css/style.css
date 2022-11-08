@@ -36,9 +36,11 @@ html {
   left: 0;
   right: 0;
   z-index: 1;
-  overflow: hidden;
 }
 
+#header .mobile-menu-btn {
+  display: none;
+}
 /* Navigation */
 #nav {
   display: inline-block;
@@ -124,7 +126,7 @@ html {
 #slider {
   margin-top: 46px;
   padding-top: 50%;
-  background-image: url('https://www.w3schools.com/w3images/ny.jpg');
+  background-image: url('https://www.w3schools.com/w3images/la.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -194,6 +196,7 @@ html {
 .about-section .member-item img {
   border-radius: 4px;
   width: 60%;
+  margin-bottom: 16px;
 }
 
 /* Tour Section */
