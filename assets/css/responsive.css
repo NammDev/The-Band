@@ -8,10 +8,6 @@
 
 /* Mobile: width < 740px */
 @media only screen and (max-width: 46.1875em) {
-  #header {
-    height: 46px;
-  }
-
   #nav > li {
     display: block;
   }

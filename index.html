@@ -269,14 +269,26 @@
       // Mobile Responsive
       var header = document.getElementById('header')
       var mobileMenu = document.getElementById('js-mobile-menu')
+      var headerHeight = header.clientHeight
+
+      // Đóng mở Mobile Menu
       mobileMenu.addEventListener('click', () => {
-        // Kiem tra trang thai
-        if (header.clientHeight === 46) {
+        var isClosed = header.clientHeight === headerHeight
+        if (isClosed) {
           header.style.height = 'auto'
         } else {
-          header.style.height = '46px'
+          header.style.height = null
         }
       })
+
+      // Tự động đóng khi chọn menu
+      // Lấy ra những item trong menu
+      var menuItems = document.querySelectorAll('#nav li a[href*="#"]')
+      for (menuItem of menuItems) {
+        menuItem.addEventListener('click', () => {
+          header.style.height = null
+        })
+      }
     </script>
   </body>
 </html>
