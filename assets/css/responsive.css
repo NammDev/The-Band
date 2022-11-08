@@ -1,0 +1,35 @@
+/* Tablet: width >= 740px and width < 1024px */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+}
+
+/* PC: width >= 1024 */
+@media only screen and (min-width: 64em) {
+}
+
+/* Mobile: width < 740px */
+@media only screen and (max-width: 46.1875em) {
+  #header {
+    height: 46px;
+  }
+
+  #nav > li {
+    display: block;
+  }
+
+  #header .search-btn {
+    display: none;
+  }
+
+  #header .mobile-menu-btn:hover {
+    color: black;
+    background-color: #ccc;
+  }
+
+  #header .mobile-menu-btn:hover .mobile-icon {
+    color: black;
+  }
+
+  #slider .text-content {
+    display: none;
+  }
+}

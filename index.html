@@ -11,6 +11,7 @@
       href="./assets/icon/icon-music-heart.png"
     />
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/responsive.css" />
     <script
       src="https://kit.fontawesome.com/3ee13fda8b.js"
       crossorigin="anonymous"
@@ -38,6 +39,9 @@
         <a href="#" class="search-btn">
           <i class="search-icon fa-solid fa-magnifying-glass"></i>
         </a>
+        <div id="js-mobile-menu" class="mobile-menu-btn">
+          <i class="mobile-icon fa-solid fa-bars"></i>
+        </div>
       </div>
       <div id="slider">
         <div class="text-content">
@@ -260,6 +264,18 @@
 
       modalContainer.addEventListener('click', (event) => {
         event.stopPropagation()
+      })
+
+      // Mobile Responsive
+      var header = document.getElementById('header')
+      var mobileMenu = document.getElementById('js-mobile-menu')
+      mobileMenu.addEventListener('click', () => {
+        // Kiem tra trang thai
+        if (header.clientHeight === 46) {
+          header.style.height = 'auto'
+        } else {
+          header.style.height = '46px'
+        }
       })
     </script>
   </body>
