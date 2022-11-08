@@ -68,4 +68,10 @@
   #slider .text-content {
     display: none;
   }
+
+  .place-content .buy-button,
+  .send-btn.buy-ticket {
+    width: 100%;
+    line-height: 22px;
+  }
 }
