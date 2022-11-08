@@ -366,7 +366,7 @@ html {
 
 /* Modal Button */
 
-.modal-body .buy-ticket {
+.buy-ticket {
   line-height: 22px;
   border: none;
   display: block;
@@ -378,7 +378,7 @@ html {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.modal-body .buy-ticket:hover {
+.buy-ticket:hover {
   color: #000;
   background-color: #ccc;
 }
@@ -417,4 +417,61 @@ html {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* Contact Section */
+.contact-section .row {
+  padding: 32px 0;
+}
+
+.contact-section .col-half {
+  float: left;
+  width: 50%;
+}
+
+.contact-section .contact-content {
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+#content .contact-section p {
+  font-size: 18px;
+  margin: 0;
+}
+
+#content .contact-section i {
+  width: 30px;
+}
+
+.contact-section .contact-form {
+}
+
+.contact-section .name-email {
+  padding: 0 8px;
+  margin: 0 -16px 8px -16px;
+}
+
+.contact-section .name-email .half {
+  float: left;
+  width: 50%;
+  padding: 8px;
+}
+
+.contact-form input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.send-btn.buy-ticket {
+  padding: 8px 16px;
+  float: right;
+  background-color: black;
+  width: auto;
+}
+
+.send-btn.buy-ticket:hover {
+  color: black;
+  background-color: #ccc;
 }
