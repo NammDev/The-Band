@@ -59,7 +59,9 @@
     margin: 0;
   }
 
-  .about-section .member-item {
+  .about-section .member-item,
+  .tour-places .place-item,
+  .contact-section .col-half {
     width: 100%;
   }
 
